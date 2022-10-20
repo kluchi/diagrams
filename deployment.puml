@@ -1,0 +1,5 @@
+@startuml sample_diagram
+
+node Node
+
+@enduml
