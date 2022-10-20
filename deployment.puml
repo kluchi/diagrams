@@ -1,5 +1,17 @@
 @startuml sample_diagram
 
-node Node
+node Server {
+    frame Docker {
+        rectangle frontend {
+
+        }
+
+        rectangle backend {
+            
+        }
+    }
+}
+
+
 
 @enduml
