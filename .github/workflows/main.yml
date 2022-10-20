@@ -20,16 +20,17 @@ jobs:
         run: |
           find *.puml \
           | awk -F' ' '{
-            # only process puml files
-            # do not try to process our theme or custom config
-            if ( $1 ~ /\.puml$/ && $1 !~ /(theme|config)\.puml$/ )
-            {
-              # only print the file name and strip newlines for spaces
-              printf "::set-output name=files::" "%s ", $1
-            }
-          }
-          END { print "" } # ensure we do print a newline at the end
-          '
+                      # only process puml files
+                      # do not try to process our theme or custom config
+                      if ( $1 ~ /\.puml$/ && $1 !~ /(theme|config)\.puml$/ )
+                      {
+                        # only print the file name and strip newlines for spaces
+                        printf "%s ", $1
+                      }
+                    }
+                    END { print "" } # ensure we do print a newline at the end
+                    ' \
+          | awk '{printf "::set-output name=files::" "%s ", $0}'
       - name: UML files considered echo output
         run: |
           echo ${{ steps.getfile.outputs.files }}
