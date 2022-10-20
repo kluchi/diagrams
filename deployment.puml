@@ -7,6 +7,10 @@ node Server {
         }
 
         rectangle backend {
+
+        }
+
+        rectangle database {
             
         }
     }
