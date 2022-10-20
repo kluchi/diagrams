@@ -1,7 +1,9 @@
 @startuml sample_diagram
 
-(*) --> Action
+(*) --> Action1
 
-Action --> (*)
+Action1 --> Action2
+
+Action2 --> (*)
 
 @enduml
