@@ -45,8 +45,8 @@ jobs:
       - name: Push Local Changes
         uses: stefanzweifel/git-auto-commit-action@v4.1.2
         with:
-          commit_user_name: "Vladimir Redkin"
-          commit_user_email: "vsredkin01@gmail.com"
-          commit_author: "Vladimir Redkin <vsredkin01@gmail.com>"
+          commit_user_name: "Umlbot"
+          commit_user_email: "kluchiuml@example.com"
+          commit_author: "Umlbot <kluchiuml@example.com"
           commit_message: "Generate SVG and PNG images for PlantUML diagrams"
           branch: ${{ github.head_ref }}
