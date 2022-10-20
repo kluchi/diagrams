@@ -1,24 +1,60 @@
 @startuml deployment
 
+'left to right direction
+
+'skinparam linetype ortho
+skinparam linetype polyline
+
+skinparam nodesep 25
+skinparam ranksep 20
+
+
 node Server {
     frame Docker {
         rectangle frontend {
             component nginx {
 
             }
-            folder static{
+            folder static {
 
             }
         }
 
         rectangle backend {
-
+            component api_server [fastapi 
+            application]
         }
 
         rectangle database {
-
+            database postgres
         }
     }
 }
+
+
+
+    node Android as andoid {
+    component Chrome {
+
+    }
+}
+
+node IOS as ios {
+    component Safari {
+
+    }
+}
+
+
+
+
+nginx -r-> api_server : /api
+nginx -r-> static : /index.html
+
+api_server --> postgres
+
+Safari --> nginx : https
+
+Chrome --> nginx : https
 
 @enduml
