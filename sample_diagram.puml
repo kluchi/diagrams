@@ -1,0 +1,7 @@
+@startuml sample_diagram
+
+(*) --> Action
+
+Action --> (*)
+
+@enduml
