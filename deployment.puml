@@ -3,7 +3,12 @@
 node Server {
     frame Docker {
         rectangle frontend {
+            component nginx {
 
+            }
+            folder static{
+
+            }
         }
 
         rectangle backend {
@@ -15,7 +20,5 @@ node Server {
         }
     }
 }
-
-
 
 @enduml
