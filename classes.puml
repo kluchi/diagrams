@@ -1,0 +1,77 @@
+@startuml classes
+
+class RegisterUserUsecase {
+    - users: UserRepository
+    + create_user(data)
+}
+RegisterUserUsecase --> UserRepository
+
+
+class GetUserUsecase {
+    - users: UserRepository
+    + get_user(user_id)
+}
+GetUserUsecase --> UserRepository
+
+class UpdateProfileUsecase {
+    - users: UserRepository
+    + update(auth_data, user_data)
+}
+UpdateProfileUsecase --> UserRepository
+
+
+class UpdateAvatarUsecase {
+    - users: UserRepository
+    - images: MediaRepository
+    + upload_avatar(auth_data, image)
+    + delete_avatar(auth_data)
+}
+UpdateAvatarUsecase --> UserRepository
+UpdateAvatarUsecase --> MediaRepository
+
+
+class User {
+    + id: UUID
+    + email: EmailStr
+    + password: PasswordHash
+    + first_name: str
+    + last_name: str
+    + bio: str
+    + photo: Media?
+}
+
+User *-- Media
+
+class Media {
+    id: UUID
+}
+
+interface UserRepository {
+    + get(id:UUID): User?
+    + get_by_email(email): User?
+    + save(user)
+}
+
+
+UserRepository o-r- User
+
+class PostgresUserRepoImpl {
+    - db: PostgresConnection
+}
+
+PostgresUserRepoImpl -u-|> UserRepository
+
+interface MediaRepository {
+    + upload_image(image): UUID
+}
+
+MediaRepository o-- Media
+
+class MinioMediaRepoImpl {
+    credentials: str
+}
+
+MinioMediaRepoImpl -u-|> MediaRepository
+
+
+@enduml
