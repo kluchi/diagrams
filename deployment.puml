@@ -55,7 +55,7 @@ node IOS as ios {
 nginx -l-> api_server : /api
 nginx -r-> static : /index.html
 
-nginx -d-> blob : /media
+nginx -d-> minio : /media
 
 
 api_server --> postgres
