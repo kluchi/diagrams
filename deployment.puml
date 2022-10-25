@@ -28,6 +28,10 @@ node Server {
         rectangle database {
             database postgres
         }
+
+        rectangle "blob storage" as blob {
+            database minio
+        }
     }
 }
 
@@ -48,8 +52,11 @@ node IOS as ios {
 
 
 
-nginx -r-> api_server : /api
+nginx -l-> api_server : /api
 nginx -r-> static : /index.html
+
+nginx -d-> blob : /media
+
 
 api_server --> postgres
 
