@@ -18,7 +18,7 @@ jobs:
       - name: Get changed UML files
         id: getfile
         run: |
-          find *.puml \
+          find . -type f -name "*.puml" \
           | awk -F' ' '{
                       # only process puml files
                       # do not try to process our theme or custom config
