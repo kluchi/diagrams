@@ -1,0 +1,71 @@
+@startuml registration_sequence
+
+actor User
+
+participant WebServer
+participant RegisterUserUsecase
+participant PostgresUserRepoImpl
+participant NotificationsService
+database Postgres
+
+queue Queue
+
+
+User -> WebServer : POST data
+activate WebServer
+
+WebServer -> RegisterUserUsecase : create_user()
+activate RegisterUserUsecase
+
+RegisterUserUsecase -> PostgresUserRepoImpl : find_by_email()
+activate PostgresUserRepoImpl
+
+PostgresUserRepoImpl -> Postgres : SELECT WHERE
+activate Postgres
+
+break Пользователь уже существует
+
+PostgresUserRepoImpl <- Postgres : 1 row
+
+RegisterUserUsecase <- PostgresUserRepoImpl : Some(user)
+
+WebServer <[#red]- RegisterUserUsecase : UserExistsError
+
+User <- WebServer : Conflict
+
+end
+
+PostgresUserRepoImpl <- Postgres : 0 rows
+deactivate Postgres
+
+RegisterUserUsecase <- PostgresUserRepoImpl : None
+deactivate PostgresUserRepoImpl
+
+RegisterUserUsecase -> PostgresUserRepoImpl : save(user)
+activate PostgresUserRepoImpl
+
+PostgresUserRepoImpl -> Postgres : INSERT
+activate Postgres
+
+PostgresUserRepoImpl <- Postgres
+deactivate Postgres
+
+RegisterUserUsecase <- PostgresUserRepoImpl
+deactivate PostgresUserRepoImpl
+
+
+RegisterUserUsecase -> NotificationsService : send_verification()
+activate NotificationsService
+
+NotificationsService --> Queue : push "send $email"
+
+RegisterUserUsecase <- NotificationsService
+deactivate NotificationsService
+
+WebServer <- RegisterUserUsecase
+deactivate RegisterUserUsecase
+
+User <- WebServer : Created
+deactivate WebServer
+
+@enduml
