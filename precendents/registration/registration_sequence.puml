@@ -10,7 +10,6 @@ database Postgres
 
 queue Queue
 
-
 User -> WebServer : POST data
 activate WebServer
 
@@ -53,11 +52,10 @@ deactivate Postgres
 RegisterUserUsecase <- PostgresUserRepoImpl
 deactivate PostgresUserRepoImpl
 
-
-RegisterUserUsecase -> NotificationsService : send_verification()
+RegisterUserUsecase -> NotificationsService : send_verification(user)
 activate NotificationsService
 
-NotificationsService --> Queue : push "send $email"
+NotificationsService --> Queue : publish "send $email"
 
 RegisterUserUsecase <- NotificationsService
 deactivate NotificationsService
