@@ -1,0 +1,15 @@
+@startuml registration_states
+
+[*] --> USER_CREATED : регистрация
+
+USER_CREATED : пользователь создан, 
+USER_CREATED : требуется email-подтверждение
+
+USER_CREATED --> USER_VERIFIED : подтверждение
+
+USER_VERIFIED: пользователь подтверждён,
+USER_VERIFIED: может входить в аккаунт
+
+USER_VERIFIED --> [*]
+
+@enduml
