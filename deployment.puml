@@ -8,7 +8,6 @@ skinparam linetype polyline
 skinparam nodesep 25
 skinparam ranksep 20
 
-
 node Server {
     frame "docker-compose" {
         rectangle frontend {
