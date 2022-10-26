@@ -33,6 +33,7 @@ UpdateAvatarUsecase --> MediaRepository
 class User {
     + id: UUID
     + email: EmailStr
+    + status: UserStatus
     + password: PasswordHash
     + first_name: str
     + last_name: str
@@ -40,7 +41,14 @@ class User {
     + photo: Media?
 }
 
+enum UserStatus {
+    CREATED
+    VERIFIED
+}
+
 User *-- Media
+
+User *-- UserStatus
 
 class Media {
     id: UUID
@@ -53,7 +61,7 @@ interface UserRepository {
 }
 
 
-UserRepository o-r- User
+UserRepository o-- User
 
 class PostgresUserRepoImpl {
     - db: PostgresConnection
@@ -72,6 +80,12 @@ class MinioMediaRepoImpl {
 }
 
 MinioMediaRepoImpl -u-|> MediaRepository
+
+RegisterUserUsecase --> NotificationsService
+
+interface NotificationsService {
+    + send_verification(user_id)
+}
 
 
 @enduml

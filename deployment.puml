@@ -25,6 +25,14 @@ node Server {
             application]
         }
 
+        queue queue {
+
+        }
+
+        rectangle notifications {
+
+        }
+
         rectangle database {
             database postgres
         }
@@ -37,7 +45,7 @@ node Server {
 
 
 
-    node Android as andoid {
+node Android as andoid {
     component Chrome {
 
     }
@@ -59,6 +67,10 @@ nginx -d-> minio : /media
 
 
 api_server --> postgres
+api_server <--> queue
+
+notifications <--> queue
+notifications --> postgres
 
 Safari --> nginx : https
 
