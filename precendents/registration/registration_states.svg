@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="402px" preserveAspectRatio="none" style="width:651px;height:402px;" version="1.1" viewBox="0 0 651 402" width="651px" zoomAndPan="magnify"><defs><filter height="300%" id="f1uddp75df5tiy" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><ellipse cx="300.5" cy="18" fill="#000000" filter="url(#f1uddp75df5tiy)" rx="10" ry="10" style="stroke: none; stroke-width: 1.0;"/><rect fill="#FEFECE" filter="url(#f1uddp75df5tiy)" height="64.2344" rx="12.5" ry="12.5" style="stroke: #A80036; stroke-width: 1.5;" width="589" x="6" y="105"/><line style="stroke: #A80036; stroke-width: 1.5;" x1="6" x2="595" y1="131.2969" y2="131.2969"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="112" x="244.5" y="122.9951">USER_CREATED</text><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="440" x="11" y="147.4355">������������������������ ������������,</text><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="569" x="11" y="161.4043">������������������ email-��������������������������</text><rect fill="#FEFECE" filter="url(#f1uddp75df5tiy)" height="64.2344" rx="12.5" ry="12.5" style="stroke: #A80036; stroke-width: 1.5;" width="580" x="10.5" y="246"/><line style="stroke: #A80036; stroke-width: 1.5;" x1="10.5" x2="590.5" y1="272.2969" y2="272.2969"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="107" x="247" y="263.9951">USER_VERIFIED</text><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="560" x="15.5" y="288.4355">������������������������ ����������������������,</text><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="492" x="15.5" y="302.4043">���������� �������������� �� ��������������</text><ellipse cx="300.5" cy="381" fill="none" filter="url(#f1uddp75df5tiy)" rx="10" ry="10" style="stroke: #000000; stroke-width: 1.0;"/><ellipse cx="301" cy="381.5" fill="#000000" rx="6" ry="6" style="stroke: none; stroke-width: 1.0;"/><!--MD5=[3d3e737cd57d0257dffeb47593bb4a4d]
+link *start to USER_CREATED--><path d="M300.5,28.18 C300.5,43.42 300.5,74.73 300.5,99.7 " fill="none" id="*start-&gt;USER_CREATED" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#A80036" points="300.5,104.93,304.5,95.93,300.5,99.93,296.5,95.93,300.5,104.93" style="stroke: #A80036; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="286" x="301.5" y="71.0669">����������������������</text><!--MD5=[40a06ff73b5f192f4f19e5f202c938b7]
+link USER_CREATED to USER_VERIFIED--><path d="M300.5,169.19 C300.5,190.39 300.5,218.49 300.5,240.69 " fill="none" id="USER_CREATED-&gt;USER_VERIFIED" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#A80036" points="300.5,245.91,304.5,236.91,300.5,240.91,296.5,236.91,300.5,245.91" style="stroke: #A80036; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="338" x="301.5" y="212.0669">��������������������������</text><!--MD5=[10f60823d0d43b536b6403412572a55f]
+link USER_VERIFIED to *end--><path d="M300.5,310.13 C300.5,328.55 300.5,351.02 300.5,365.42 " fill="none" id="USER_VERIFIED-&gt;*end" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#A80036" points="300.5,370.7,304.5,361.7,300.5,365.7,296.5,361.7,300.5,370.7" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[99e26f1bcbc35824267491ca14714185]
+@startuml registration_states
+
+[*] - -> USER_CREATED : ����������������������
+
+USER_CREATED : ������������������������ ������������, 
+USER_CREATED : ������������������ email-��������������������������
+
+USER_CREATED - -> USER_VERIFIED : ��������������������������
+
+USER_VERIFIED: ������������������������ ����������������������,
+USER_VERIFIED: ���������� �������������� �� ��������������
+
+USER_VERIFIED - -> [*]
+
+@enduml
+
+PlantUML version 1.2020.02(Sun Mar 01 10:22:07 GMT 2020)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Java Version: 11.0.9+11-Ubuntu-0ubuntu1
+Operating System: Linux
+Default Encoding: ANSI_X3.4-1968
+Language: en
+Country: US
+--></g></svg>
