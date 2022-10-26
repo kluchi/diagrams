@@ -3,18 +3,15 @@
 'left to right direction
 
 'skinparam linetype ortho
-skinparam linetype polyline
+'skinparam linetype polyline
 
-skinparam nodesep 25
-skinparam ranksep 20
+skinparam nodesep 40
+skinparam ranksep 25
 
 node Server {
     frame "docker-compose" {
-        rectangle frontend {
-            component nginx {
-
-            }
-            folder static {
+        rectangle "root router" as root_r {
+            component "nginx" as root {
 
             }
         }
@@ -24,12 +21,28 @@ node Server {
             application]
         }
 
-        queue queue {
+        rectangle frontend {
+            
+            component "nginx" as n2 {
 
+            }
+
+            folder static {
+
+            }
         }
 
-        rectangle notifications {
+        rectangle "queue" as q {
+            queue "rabbitmq" as queue {
 
+            }
+        }
+
+        
+
+        rectangle notifications {
+            component ns [Notifications
+            Service]
         }
 
         rectangle database {
@@ -59,20 +72,24 @@ node IOS as ios {
 
 
 
-nginx -l-> api_server : /api
-nginx -r-> static : /index.html
+root --> api_server : /api
+root -r-> n2 : /
 
-nginx -d-> minio : /media
+root -d-> minio : /media
 
 
 api_server --> postgres
 api_server <--> queue
 
-notifications <--> queue
-notifications --> postgres
+api_server --> minio
 
-Safari --> nginx : https
+ns <--> queue
+ns --> postgres
 
-Chrome --> nginx : https
+Safari --> root : https
+
+Chrome --> root : https
+
+
 
 @enduml
