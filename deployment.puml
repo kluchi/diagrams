@@ -10,7 +10,7 @@ skinparam ranksep 20
 
 
 node Server {
-    frame Docker {
+    frame "docker-compose" {
         rectangle frontend {
             component nginx {
 
