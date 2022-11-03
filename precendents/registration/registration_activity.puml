@@ -1,0 +1,34 @@
+@startuml registration_activity
+
+
+(*) --> "request.recv()"
+
+"request.recv()" --> "data.validate()"
+
+"data.validate()" --> if "is succesful" then
+    --> [true] find_user()
+else
+    --> [false] send_response(422)
+endif
+
+"find_user()" --> if "user exists?" then
+
+--> [Some(User)] send_response(409)
+
+else
+
+--> [None] "save_user(user)"
+
+"save_user(user)" --> "send_email(user)"
+
+"send_email(user)" --> "send_response(201)"
+
+endif
+
+"send_response(201)" --> (*)
+
+"send_response(409)" --> (*)
+
+"send_response(422)" --> (*)
+
+@enduml
