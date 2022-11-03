@@ -1,0 +1,43 @@
+@startuml components
+
+component frontend {
+
+}
+
+
+
+
+[wsgi] -left- HTTP
+
+frontend -right-( HTTP
+
+wsgi --> usecases
+
+component usecases {
+
+}
+
+
+component models {
+
+}
+
+usecases --> models
+
+[repositories] -u- repos
+
+
+
+
+[external] -u- notifications
+
+[impl] --|> repos
+
+[impl] --|> notifications
+
+usecases --( repos
+usecases --( notifications
+
+
+
+@enduml
