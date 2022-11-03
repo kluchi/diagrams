@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="851px" preserveAspectRatio="none" style="width:491px;height:851px;" version="1.1" viewBox="0 0 491 851" width="491px" zoomAndPan="magnify"><defs><filter height="300%" id="fkbafhodqccvj" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--MD5=[a60570e4b426f702ccbb0d459e3b9417]
+cluster models--><polygon fill="#FFFFFF" filter="url(#fkbafhodqccvj)" points="89.5,317,152.5,317,159.5,339.2969,182.5,339.2969,182.5,475,89.5,475,89.5,317" style="stroke: #000000; stroke-width: 1.5;"/><line style="stroke: #000000; stroke-width: 1.5;" x1="89.5" x2="159.5" y1="339.2969" y2="339.2969"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="57" x="93.5" y="331.9951">models</text><!--MD5=[8e3352d1df8de79dfe88814080b2ef0b]
+cluster usecases--><polygon fill="#FFFFFF" filter="url(#fkbafhodqccvj)" points="64.5,681,145.5,681,152.5,703.2969,448.5,703.2969,448.5,839,64.5,839,64.5,681" style="stroke: #000000; stroke-width: 1.5;"/><line style="stroke: #000000; stroke-width: 1.5;" x1="64.5" x2="152.5" y1="703.2969" y2="703.2969"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="75" x="68.5" y="695.9951">usecases</text><!--MD5=[96f760269fc4f42dc47a24738b17ae1e]
+cluster repositories--><polygon fill="#FFFFFF" filter="url(#fkbafhodqccvj)" points="51,135,153,135,160,157.2969,221,157.2969,221,293,51,293,51,135" style="stroke: #000000; stroke-width: 1.5;"/><line style="stroke: #000000; stroke-width: 1.5;" x1="51" x2="160" y1="157.2969" y2="157.2969"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="96" x="55" y="149.9951">repositories</text><!--MD5=[2bc534311b38a7f7508092f91511a69f]
+cluster external--><polygon fill="#FFFFFF" filter="url(#fkbafhodqccvj)" points="40.5,24,111.5,24,118.5,46.2969,231.5,46.2969,231.5,111,40.5,111,40.5,24" style="stroke: #000000; stroke-width: 1.5;"/><line style="stroke: #000000; stroke-width: 1.5;" x1="40.5" x2="118.5" y1="46.2969" y2="46.2969"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="65" x="44.5" y="38.9951">external</text><!--MD5=[cf58d37b78f149325f79356613ff3b39]
+cluster impl--><polygon fill="#FFFFFF" filter="url(#fkbafhodqccvj)" points="22,499,60,499,67,521.2969,469,521.2969,469,657,22,657,22,499" style="stroke: #000000; stroke-width: 1.5;"/><line style="stroke: #000000; stroke-width: 1.5;" x1="22" x2="67" y1="521.2969" y2="521.2969"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="32" x="26" y="513.9951">impl</text><!--MD5=[fee662a292a0353a69bd162820bae93b]
+entity User--><polygon fill="#FEFECE" filter="url(#fkbafhodqccvj)" points="110,352,110,388.2969,162,388.2969,162,362,152,352,110,352" style="stroke: #000000; stroke-width: 1.5;"/><path d="M152,352 L152,362 L162,362 " fill="#FEFECE" style="stroke: #000000; stroke-width: 1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="32" x="120" y="374.9951">User</text><!--MD5=[75a7e46195dadf59d3eecf9589a74e68]
+entity Media--><polygon fill="#FEFECE" filter="url(#fkbafhodqccvj)" points="105.5,423,105.5,459.2969,166.5,459.2969,166.5,433,156.5,423,105.5,423" style="stroke: #000000; stroke-width: 1.5;"/><path d="M156.5,423 L156.5,433 L166.5,433 " fill="#FEFECE" style="stroke: #000000; stroke-width: 1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="41" x="115.5" y="445.9951">Media</text><!--MD5=[c9e2905c2b70fa8404785988b580c9b3]
+entity register_user--><polygon fill="#FEFECE" filter="url(#fkbafhodqccvj)" points="80.5,787,80.5,823.2969,191.5,823.2969,191.5,797,181.5,787,80.5,787" style="stroke: #000000; stroke-width: 1.5;"/><path d="M181.5,787 L181.5,797 L191.5,797 " fill="#FEFECE" style="stroke: #000000; stroke-width: 1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="91" x="90.5" y="809.9951">register_user</text><!--MD5=[af981485d9ee2b6d84720674029a7486]
+entity get_user--><polygon fill="#FEFECE" filter="url(#fkbafhodqccvj)" points="95.5,716,95.5,752.2969,176.5,752.2969,176.5,726,166.5,716,95.5,716" style="stroke: #000000; stroke-width: 1.5;"/><path d="M166.5,716 L166.5,726 L176.5,726 " fill="#FEFECE" style="stroke: #000000; stroke-width: 1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="61" x="105.5" y="738.9951">get_user</text><!--MD5=[2db925ba4a44d5a5622a442c3b26ec01]
+entity update_profile--><polygon fill="#FEFECE" filter="url(#fkbafhodqccvj)" points="314.5,787,314.5,823.2969,432.5,823.2969,432.5,797,422.5,787,314.5,787" style="stroke: #000000; stroke-width: 1.5;"/><path d="M422.5,787 L422.5,797 L432.5,797 " fill="#FEFECE" style="stroke: #000000; stroke-width: 1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="98" x="324.5" y="809.9951">update_profile</text><!--MD5=[ab06c6a73e38038f7ecc27d188fb5699]
+entity update_avatar--><polygon fill="#FEFECE" filter="url(#fkbafhodqccvj)" points="315,716,315,752.2969,432,752.2969,432,726,422,716,315,716" style="stroke: #000000; stroke-width: 1.5;"/><path d="M422,716 L422,726 L432,726 " fill="#FEFECE" style="stroke: #000000; stroke-width: 1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="97" x="325" y="738.9951">update_avatar</text><!--MD5=[5ba4736a18d860e8d46ee6758ae30046]
+entity user_repository--><polygon fill="#FEFECE" filter="url(#fkbafhodqccvj)" points="72.5,170,72.5,206.2969,199.5,206.2969,199.5,180,189.5,170,72.5,170" style="stroke: #000000; stroke-width: 1.5;"/><path d="M189.5,170 L189.5,180 L199.5,180 " fill="#FEFECE" style="stroke: #000000; stroke-width: 1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="107" x="82.5" y="192.9951">user_repository</text><!--MD5=[dab519cc066082868050e582ada6d9a5]
+entity media_repository--><polygon fill="#FEFECE" filter="url(#fkbafhodqccvj)" points="67,241,67,277.2969,205,277.2969,205,251,195,241,67,241" style="stroke: #000000; stroke-width: 1.5;"/><path d="M195,241 L195,251 L205,251 " fill="#FEFECE" style="stroke: #000000; stroke-width: 1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="118" x="77" y="263.9951">media_repository</text><!--MD5=[a677c2b6f20a20c027fba5649dc271ee]
+entity notifications_service--><polygon fill="#FEFECE" filter="url(#fkbafhodqccvj)" points="56.5,59,56.5,95.2969,215.5,95.2969,215.5,69,205.5,59,56.5,59" style="stroke: #000000; stroke-width: 1.5;"/><path d="M205.5,59 L205.5,69 L215.5,69 " fill="#FEFECE" style="stroke: #000000; stroke-width: 1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="139" x="66.5" y="81.9951">notifications_service</text><!--MD5=[b51916641c7f1c5e7f417f90442d92c5]
+entity postgres_user_repository--><polygon fill="#FEFECE" filter="url(#fkbafhodqccvj)" points="38,605,38,641.2969,234,641.2969,234,615,224,605,38,605" style="stroke: #000000; stroke-width: 1.5;"/><path d="M224,605 L224,615 L234,615 " fill="#FEFECE" style="stroke: #000000; stroke-width: 1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="176" x="48" y="627.9951">postgres_user_repository</text><!--MD5=[0f63f2ce72de9fe6120d9c83e5b956ba]
+entity minio_media_repository--><polygon fill="#FEFECE" filter="url(#fkbafhodqccvj)" points="45,534,45,570.2969,227,570.2969,227,544,217,534,45,534" style="stroke: #000000; stroke-width: 1.5;"/><path d="M217,534 L217,544 L227,544 " fill="#FEFECE" style="stroke: #000000; stroke-width: 1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="162" x="55" y="556.9951">minio_media_repository</text><!--MD5=[53427eeab06bcf1ac76be6c1fdb21628]
+entity NotificationsServiceImpl--><polygon fill="#FEFECE" filter="url(#fkbafhodqccvj)" points="294,605,294,641.2969,453,641.2969,453,615,443,605,294,605" style="stroke: #000000; stroke-width: 1.5;"/><path d="M443,605 L443,615 L453,615 " fill="#FEFECE" style="stroke: #000000; stroke-width: 1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="139" x="304" y="627.9951">notifications_service</text><!--MD5=[9c1a86f29a03f18798b20c0b924f302f]
+link register_user to get_user--><!--MD5=[762c00a9c16d057bb5b34649d26e2db4]
+link register_user to update_profile--><!--MD5=[1ca44741252161f6f5a9bd12fbf72a8a]
+link update_profile to update_avatar--><!--MD5=[dfeaeb4ff21a182470a428cdefeae418]
+link postgres_user_repository to minio_media_repository--><!--MD5=[e4bc05e0d2b996817b4bdd1a7ffd899a]
+link postgres_user_repository to NotificationsServiceImpl--><!--MD5=[38500cc2f0a324b1e6243ef759ec4cdb]
+@startuml packages
+
+left to right direction
+
+folder models {
+    file User
+    file Media
+}
+
+folder usecases {
+    file register_user
+    file get_user
+    file update_profile
+    file update_avatar
+}
+
+folder repositories {
+    file user_repository
+    file media_repository
+}
+
+folder external {
+    file notifications_service
+}
+
+folder impl {
+    file postgres_user_repository
+    file minio_media_repository
+    file "notifications_service" as NotificationsServiceImpl
+}
+
+@enduml
+
+PlantUML version 1.2020.02(Sun Mar 01 10:22:07 GMT 2020)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Java Version: 11.0.9+11-Ubuntu-0ubuntu1
+Operating System: Linux
+Default Encoding: ANSI_X3.4-1968
+Language: en
+Country: US
+--></g></svg>
