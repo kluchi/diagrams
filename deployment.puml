@@ -10,18 +10,14 @@ skinparam ranksep 25
 
 node Server {
     frame "docker-compose" {
+
         rectangle "root router" as root_r {
             component "nginx" as root {
 
             }
         }
 
-        rectangle backend {
-            component api_server [fastapi 
-            application]
-        }
-
-        rectangle frontend {
+         rectangle frontend {
             
             component "nginx" as n2 {
 
@@ -32,32 +28,45 @@ node Server {
             }
         }
 
-        rectangle "queue" as q {
-            queue "rabbitmq" as queue {
+        together group1 {
+            
 
-            }
+        rectangle backend {
+            component api_server [fastapi 
+            application]
+        }
+
+       rectangle "blob storage" as blob {
+            database minio
         }
 
         
+        }
+        
+        together group2 {
+            rectangle "queue" as q {
+            queue "rabbitmq" as queue {
 
-        rectangle notifications {
-            component ns [Notifications
-            Service]
+            }
         }
 
         rectangle database {
             database postgres
         }
 
-        rectangle "blob storage" as blob {
-            database minio
+        
         }
+
+        rectangle notifications {
+            component ns [Notifications
+            Service]
+        }        
     }
 }
 
 
-
-node Android as andoid {
+together device_group {
+    node Android as android {
     component Chrome {
 
     }
@@ -69,26 +78,29 @@ node IOS as ios {
     }
 }
 
+}
 
 
 
-root --> api_server : /api
-root -r-> n2 : /
 
-root -d-> minio : /media
+root_r -l-> backend : /api
+root_r -d-> frontend : /index.html
 
 
-api_server --> postgres
-api_server <--> queue
+blob <--- root_r : /media
 
-api_server --> minio
 
-ns <--> queue
-ns --> postgres
+backend --> database
+backend <--> q
 
-Safari --> root : https
+blob <-- backend 
 
-Chrome --> root : https
+notifications <--> q
+notifications --> database
+
+android --> root_r : https
+
+ios --> root_r : https
 
 
 
