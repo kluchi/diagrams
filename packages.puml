@@ -1,0 +1,32 @@
+@startuml packages
+
+left to right direction
+
+folder models {
+    file User
+    file Media
+}
+
+folder usecases {
+    file register_user
+    file get_user
+    file update_profile
+    file update_avatar
+}
+
+folder repositories {
+    file user_repository
+    file media_repository
+}
+
+folder external {
+    file notifications_service
+}
+
+folder impl {
+    file postgres_user_repository
+    file minio_media_repository
+    file "notifications_service" as NotificationsServiceImpl
+}
+
+@enduml
