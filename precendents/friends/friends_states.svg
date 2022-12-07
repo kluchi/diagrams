@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="339px" preserveAspectRatio="none" style="width:375px;height:339px;" version="1.1" viewBox="0 0 375 339" width="375px" zoomAndPan="magnify"><defs><filter height="300%" id="funizldvvwsx2" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><ellipse cx="173.5" cy="18" fill="#000000" filter="url(#funizldvvwsx2)" rx="10" ry="10" style="stroke: none; stroke-width: 1.0;"/><rect fill="#FEFECE" filter="url(#funizldvvwsx2)" height="50.2656" rx="12.5" ry="12.5" style="stroke: #A80036; stroke-width: 1.5;" width="147" x="100" y="88"/><line style="stroke: #A80036; stroke-width: 1.5;" x1="100" x2="247" y1="114.2969" y2="114.2969"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="37" x="155" y="105.9951">SENT</text><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="127" x="105" y="130.4355">заявка отправлена</text><rect fill="#FEFECE" filter="url(#funizldvvwsx2)" height="50.2656" rx="12.5" ry="12.5" style="stroke: #A80036; stroke-width: 1.5;" width="139" x="6" y="198"/><line style="stroke: #A80036; stroke-width: 1.5;" x1="6" x2="145" y1="224.2969" y2="224.2969"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="70" x="40.5" y="215.9951">REJECTED</text><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="119" x="11" y="240.4355">заявка отклонена</text><rect fill="#FEFECE" filter="url(#funizldvvwsx2)" height="50.2656" rx="12.5" ry="12.5" style="stroke: #A80036; stroke-width: 1.5;" width="183" x="180" y="198"/><line style="stroke: #A80036; stroke-width: 1.5;" x1="180" x2="363" y1="224.2969" y2="224.2969"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="76" x="233.5" y="215.9951">ACCEPTED</text><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="163" x="185" y="240.4355">заявка в друзья принята</text><ellipse cx="173.5" cy="318" fill="none" filter="url(#funizldvvwsx2)" rx="10" ry="10" style="stroke: #000000; stroke-width: 1.0;"/><ellipse cx="174" cy="318.5" fill="#000000" rx="6" ry="6" style="stroke: none; stroke-width: 1.0;"/><!--MD5=[7c1fdf74ce81d1412e03eb0368e482ef]
+link *start to SENT--><path d="M173.5,28.26 C173.5,40.86 173.5,63.98 173.5,82.74 " fill="none" id="*start-&gt;SENT" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#A80036" points="173.5,87.91,177.5,78.91,173.5,82.91,169.5,78.91,173.5,87.91" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[3856a290179390efca1a22e9ddb09a6e]
+link SENT to REJECTED--><path d="M151.51,138.24 C136.5,154.77 116.58,176.72 100.9,194.01 " fill="none" id="SENT-&gt;REJECTED" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#A80036" points="97.42,197.84,106.4308,193.8643,100.7805,194.1377,100.5071,188.4875,97.42,197.84" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[22326fc9bacc68b13061474583654282]
+link SENT to ACCEPTED--><path d="M195.49,138.24 C210.5,154.77 230.42,176.72 246.1,194.01 " fill="none" id="SENT-&gt;ACCEPTED" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#A80036" points="249.58,197.84,246.4929,188.4875,246.2195,194.1377,240.5692,193.8643,249.58,197.84" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[92a905aaefc9264c23eedc0f19957612]
+link REJECTED to *end--><path d="M100.99,248.19 C121.11,267.28 148.15,292.94 162.86,306.91 " fill="none" id="REJECTED-&gt;*end" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#A80036" points="166.67,310.52,162.8944,301.4236,163.0429,307.0785,157.388,307.227,166.67,310.52" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[9fdc5a83cc158044df7c221ffc253f77]
+link ACCEPTED to *end--><path d="M246.01,248.19 C225.89,267.28 198.85,292.94 184.14,306.91 " fill="none" id="ACCEPTED-&gt;*end" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#A80036" points="180.33,310.52,189.612,307.227,183.9571,307.0785,184.1056,301.4236,180.33,310.52" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[fafa1a4b8fad5f3739bf7fa215733b65]
+@startuml friends_states
+
+[*] - -> SENT
+SENT : заявка отправлена
+
+SENT - -> REJECTED
+REJECTED : заявка отклонена
+
+SENT - -> ACCEPTED
+ACCEPTED : заявка в друзья принята
+
+REJECTED - -> [*]
+ACCEPTED - -> [*]
+
+@enduml
+
+PlantUML version 1.2020.02(Sun Mar 01 10:22:07 GMT 2020)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Java Version: 11.0.9+11-Ubuntu-0ubuntu1
+Operating System: Linux
+Default Encoding: ANSI_X3.4-1968
+Language: en
+Country: US
+--></g></svg>
