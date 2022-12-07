@@ -1,0 +1,36 @@
+@startuml ratings_sequence
+
+actor User
+
+participant WebServer
+participant RatingsUsecase
+participant PostgresRatingsRepoImpl
+database Postgres
+
+
+User -> WebServer : POST data
+activate WebServer
+
+WebServer -> RatingsUsecase: update()
+activate RatingsUsecase
+
+RatingsUsecase -> PostgresRatingsRepoImpl: save()
+activate PostgresRatingsRepoImpl
+
+PostgresRatingsRepoImpl -> Postgres: INSERT ON CONFLICT DO UPDATE
+activate Postgres
+
+PostgresRatingsRepoImpl <- Postgres: OK 1 row affected
+deactivate Postgres
+
+RatingsUsecase <- PostgresRatingsRepoImpl
+deactivate PostgresRatingsRepoImpl
+
+WebServer <- RatingsUsecase
+deactivate RatingsUsecase
+
+User <- WebServer: 200 OK
+
+
+
+@enduml
