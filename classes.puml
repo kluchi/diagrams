@@ -9,13 +9,13 @@ RegisterUserUsecase --> UserRepository
 
 class GetUserUsecase {
     - users: UserRepository
-    + get_user(user_id)
+    + get_user(user_id: UUID): User?
 }
 GetUserUsecase --> UserRepository
 
 class UpdateProfileUsecase {
     - users: UserRepository
-    + update(auth_data, user_data)
+    + update(user_data): void
 }
 UpdateProfileUsecase --> UserRepository
 
@@ -23,8 +23,8 @@ UpdateProfileUsecase --> UserRepository
 class UpdateAvatarUsecase {
     - users: UserRepository
     - images: MediaRepository
-    + upload_avatar(auth_data, image)
-    + delete_avatar(auth_data)
+    + upload_avatar(image)
+    + delete_avatar()
 }
 UpdateAvatarUsecase --> UserRepository
 UpdateAvatarUsecase --> MediaRepository
@@ -57,7 +57,7 @@ class Media {
 interface UserRepository {
     + get(id:UUID): User?
     + get_by_email(email): User?
-    + save(user)
+    + save(user): User
 }
 
 
@@ -87,5 +87,84 @@ interface NotificationsService {
     + send_verification(user_id)
 }
 
+class Friendship {
+    + user1: User
+    + user2: User
+    + initiator: User
+    + status: FriendshipState
+}
+
+
+
+enum FriendshipState {
+    PENDING
+    ACCEPTED
+    REJECTED
+}
+
+Friendship *-- FriendshipState
+
+Friendship o-- "3" User
+
+interface FriendshipRepository {
+    find_request(u1:User, u2:User): Friendship?
+    save(link: Friendship)
+}
+
+FriendshipRepository o-- Friendship
+
+class PostgresFriendshipRepoImpl {
+    - db: PostgresConnection
+}
+
+PostgresFriendshipRepoImpl -up-|> FriendshipRepository
+
+class GetFriendsUsecase {
+    - friends: FriendshipRepository
+
+    + list(friends_of: UUID): List[UUID]
+}
+
+GetFriendsUsecase --> FriendshipRepository
+
+class FriendRequestUsecase {
+    - friends: FriendshipRepository
+    - users: UserRepository
+    - notifications: NotificationsService
+
+    + accept(from: UUID, to: UUID): void
+    + send(from: UUID, to: UUID): void
+    + reject(from: UUID, to: UUID): void
+}
+
+
+FriendRequestUsecase --> NotificationsService
+FriendRequestUsecase --> FriendshipRepository
+FriendRequestUsecase --> UserRepository
+
+class Rating {
+    from: User
+    to: User
+    value: int
+}
+
+Rating --> "2" User
+
+interface RatingRepository {
+    + get(from: UUID, to: UUID): Rating?
+    + save(rating): Rating
+    + compute(of: UUID): float?
+}
+
+RatingRepository o-- Rating
+
+class RatingsUsecase {
+    - ratings: RatingRepository
+
+    + update(from: UUID, to: UUID, value: int): void
+    + get_value(user: UUID): float?
+}
+
+RatingsUsecase --> RatingRepository
 
 @enduml

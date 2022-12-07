@@ -1,0 +1,15 @@
+@startuml friends_states
+
+[*] --> SENT
+SENT : заявка отправлена
+
+SENT --> REJECTED
+REJECTED : заявка отклонена
+
+SENT --> ACCEPTED
+ACCEPTED : заявка в друзья принята
+
+REJECTED --> [*]
+ACCEPTED --> [*]
+
+@enduml
