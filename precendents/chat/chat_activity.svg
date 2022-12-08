@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="895px" preserveAspectRatio="none" style="width:737px;height:895px;" version="1.1" viewBox="0 0 737 895" width="737px" zoomAndPan="magnify"><defs><filter height="300%" id="f1woojzqdtj28z" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--MD5=[a878dacc166bb130104221e452026b76]
+cluster Notifications--><polygon fill="#FFFFFF" filter="url(#f1woojzqdtj28z)" points="22,720,126,720,133,742.2969,562,742.2969,562,883,22,883,22,720" style="stroke: #000000; stroke-width: 1.5;"/><line style="stroke: #000000; stroke-width: 1.5;" x1="22" x2="133" y1="742.2969" y2="742.2969"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="98" x="26" y="734.9951">Notifications</text><polygon fill="#FEFECE" filter="url(#f1woojzqdtj28z)" points="318,755,330,767,318,779,306,767,318,755" style="stroke: #A80036; stroke-width: 1.5;"/><rect fill="#FEFECE" filter="url(#f1woojzqdtj28z)" height="33.9688" rx="12.5" ry="12.5" style="stroke: #A80036; stroke-width: 1.5;" width="244" x="38" y="833"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="224" x="48" y="854.1387">send_ws_notification(user, content)</text><rect fill="#FEFECE" filter="url(#f1woojzqdtj28z)" height="33.9688" rx="12.5" ry="12.5" style="stroke: #A80036; stroke-width: 1.5;" width="244" x="302" y="833"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="224" x="312" y="854.1387">db.store_notification(user, content)</text><ellipse cx="581" cy="18" fill="#000000" filter="url(#f1woojzqdtj28z)" rx="10" ry="10" style="stroke: none; stroke-width: 1.0;"/><rect fill="#FEFECE" filter="url(#f1woojzqdtj28z)" height="33.9688" rx="12.5" ry="12.5" style="stroke: #A80036; stroke-width: 1.5;" width="109" x="526.5" y="69"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="89" x="536.5" y="90.1387">request.recv()</text><rect fill="#FEFECE" filter="url(#f1woojzqdtj28z)" height="33.9688" rx="12.5" ry="12.5" style="stroke: #A80036; stroke-width: 1.5;" width="112" x="525" y="144"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="92" x="535" y="165.1387">data.validate()</text><polygon fill="#FEFECE" filter="url(#f1woojzqdtj28z)" points="581,219,593,231,581,243,569,231,581,219" style="stroke: #A80036; stroke-width: 1.5;"/><rect fill="#FEFECE" filter="url(#f1woojzqdtj28z)" height="33.9688" rx="12.5" ry="12.5" style="stroke: #A80036; stroke-width: 1.5;" width="87" x="468.5" y="297"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="67" x="478.5" y="318.1387">find_chat()</text><rect fill="#FEFECE" filter="url(#f1woojzqdtj28z)" height="33.9688" rx="12.5" ry="12.5" style="stroke: #A80036; stroke-width: 1.5;" width="150" x="576" y="297"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="130" x="586" y="318.1387">send_response(422)</text><polygon fill="#FEFECE" filter="url(#f1woojzqdtj28z)" points="512,372,524,384,512,396,500,384,512,372" style="stroke: #A80036; stroke-width: 1.5;"/><rect fill="#FEFECE" filter="url(#f1woojzqdtj28z)" height="33.9688" rx="12.5" ry="12.5" style="stroke: #A80036; stroke-width: 1.5;" width="277" x="314.5" y="525"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="257" x="324.5" y="546.1387">chats.send_message(from, to, message)</text><rect fill="#FEFECE" filter="url(#f1woojzqdtj28z)" height="33.9688" rx="12.5" ry="12.5" style="stroke: #A80036; stroke-width: 1.5;" width="126" x="367" y="450"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="106" x="377" y="471.1387">chats.save(chat)</text><rect fill="#000000" filter="url(#f1woojzqdtj28z)" height="8" style="stroke: none; stroke-width: 1.0;" width="80" x="413" y="600"/><rect fill="#FEFECE" filter="url(#f1woojzqdtj28z)" height="33.9688" rx="12.5" ry="12.5" style="stroke: #A80036; stroke-width: 1.5;" width="150" x="470" y="649"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="130" x="480" y="670.1387">send_response(201)</text><ellipse cx="618" cy="767" fill="none" filter="url(#f1woojzqdtj28z)" rx="10" ry="10" style="stroke: #000000; stroke-width: 1.0;"/><ellipse cx="618.5" cy="767.5" fill="#000000" rx="6" ry="6" style="stroke: none; stroke-width: 1.0;"/><rect fill="#FEFECE" filter="url(#f1woojzqdtj28z)" height="33.9688" rx="12.5" ry="12.5" style="stroke: #A80036; stroke-width: 1.5;" width="264" x="186" y="649"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="244" x="196" y="670.1387">notifications.chat_notification(from, to)</text><!--MD5=[dd041cf45e5e0913bf6e881bb19ba206]
+link start to request.recv()--><path d="M581,28.18 C581,37.27 581,51.53 581,63.49 " fill="none" id="start-&gt;request.recv()" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#A80036" points="581,68.79,585,59.79,581,63.79,577,59.79,581,68.79" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[13094c1fd81334aaf163549ca7d212c1]
+link request.recv() to data.validate()--><path d="M581,103.2 C581,113.69 581,127.46 581,138.82 " fill="none" id="request.recv()-&gt;data.validate()" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#A80036" points="581,143.84,585,134.84,581,138.84,577,134.84,581,143.84" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[2137eb966bbe44976e5e596115c876ee]
+link data.validate() to #93--><path d="M581,178.12 C581,188.92 581,203.08 581,213.88 " fill="none" id="data.validate()-&gt;#93" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#A80036" points="581,218.89,585,209.89,581,213.89,577,209.89,581,218.89" style="stroke: #A80036; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="68" x="496.425" y="208.468">is succesful</text><!--MD5=[ad84ef6323a55fd513a9ed6cc6928e37]
+link #93 to find_chat()--><path d="M575.81,238.09 C566.02,249.58 544.43,274.93 529.07,292.96 " fill="none" id="#93-&gt;find_chat()" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#A80036" points="525.7,296.91,534.5771,292.6441,528.9387,293.1007,528.4821,287.4623,525.7,296.91" style="stroke: #A80036; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="23" x="553" y="274.2104">true</text><!--MD5=[f27eae8c4d7a2ac24de68a8019fed79b]
+link #93 to send_response(422)--><path d="M586.26,238.09 C596.19,249.58 618.1,274.93 633.68,292.96 " fill="none" id="#93-&gt;send_response(422)" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#A80036" points="637.1,296.91,634.2419,287.485,633.8308,293.1268,628.1889,292.7157,637.1,296.91" style="stroke: #A80036; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="28" x="619" y="274.2104">false</text><!--MD5=[6ba03b8f3f4f89ea80f3824ec070ae67]
+link find_chat() to #100--><path d="M512,331.12 C512,341.92 512,356.08 512,366.88 " fill="none" id="find_chat()-&gt;#100" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#A80036" points="512,371.89,516,362.89,512,366.89,508,362.89,512,371.89" style="stroke: #A80036; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="40" x="462.25" y="361.468">exists?</text><!--MD5=[f0ed4cfc7323f68c1e52690aba1b36ae]
+link #100 to chats.send_message(from, to, message)--><path d="M513.35,394.9 C515.43,413.47 517.73,454.32 503,484 C496.12,497.86 485.02,511.01 475.02,521.18 " fill="none" id="#100-&gt;chats.send_message(from, to, message)" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#A80036" points="471.39,524.79,480.5895,521.273,474.9327,521.2616,474.9441,515.6048,471.39,524.79" style="stroke: #A80036; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="65" x="513" y="471.2104">Some(chat)</text><!--MD5=[01a09924067b7f768eb88a87166451d4]
+link #100 to chats.save(chat)--><path d="M506.36,390.57 C494.9,401.89 468.37,428.09 449.82,446.42 " fill="none" id="#100-&gt;chats.save(chat)" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#A80036" points="446.23,449.97,455.4436,446.4902,449.7869,446.456,449.8212,440.7992,446.23,449.97" style="stroke: #A80036; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="29" x="479" y="427.2104">None</text><!--MD5=[3b9554feee9f5bd2f877109ce21a3461]
+link chats.save(chat) to chats.send_message(from, to, message)--><path d="M435.1,484.2 C438.41,494.69 442.75,508.46 446.33,519.82 " fill="none" id="chats.save(chat)-&gt;chats.send_message(from, to, message)" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#A80036" points="447.91,524.84,449.0268,515.0547,446.4105,520.0701,441.395,517.4539,447.91,524.84" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[71ea746abb523c181f655ed6cfbb86e9]
+link chats.send_message(from, to, message) to B1--><path d="M453,559.08 C453,570.47 453,585.3 453,594.48 " fill="none" id="chats.send_message(from, to, message)-&gt;B1" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#A80036" points="453,599.61,457,590.61,453,594.61,449,590.61,453,599.61" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[4e38e7cfc3caa942b6e7d4c5f24f08e0]
+link B1 to send_response(201)--><path d="M457.69,608.06 C468.29,614.97 494.8,632.26 515.85,645.99 " fill="none" id="B1-&gt;send_response(201)" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#A80036" points="520.25,648.86,514.882,640.6026,516.0571,646.1361,510.5237,647.3112,520.25,648.86" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[560d46b6f6793d8224e9cff1efa47d2b]
+link send_response(422) to end--><path d="M651,331.21 C651,344.99 651,365.29 651,383 C651,383 651,383 651,667 C651,699.46 634.84,734.97 625.14,753.37 " fill="none" id="send_response(422)-&gt;end" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#A80036" points="622.59,758.09,630.3811,752.0652,624.9622,753.6886,623.3388,748.2696,622.59,758.09" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[cf67889822b4c67feb1ed9ab92f371d4]
+link send_response(201) to end--><path d="M557.05,683.35 C571.84,703.4 596.52,736.87 609.48,754.44 " fill="none" id="send_response(201)-&gt;end" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#A80036" points="612.5,758.54,610.3605,748.9263,609.5252,754.5212,603.9304,753.686,612.5,758.54" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[cc24c31392c52649a239471014a6da5c]
+link B1 to notifications.chat_notification(from, to)--><path d="M446.12,608.06 C430.26,615.11 390.1,632.96 358.93,646.81 " fill="none" id="B1-&gt;notifications.chat_notification(from, to)" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#A80036" points="354.01,649,363.8589,649.0057,358.5802,646.972,360.614,641.6933,354.01,649" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[962754886261372a54d96878aceb40f6]
+link notifications.chat_notification(from, to) to #118--><path d="M318,683.35 C318,701.66 318,731.19 318,749.55 " fill="none" id="notifications.chat_notification(from, to)-&gt;#118" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#A80036" points="318,754.86,322,745.86,318,749.86,314,745.86,318,754.86" style="stroke: #A80036; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="116" x="182.0625" y="746.9731">has_ws_connection?</text><!--MD5=[ec4d095c84707bdbaec42bd8202fd4da]
+link #118 to send_ws_notification(user, content)--><path d="M310.38,771.91 C290.06,782.32 233.58,811.28 195.92,830.58 " fill="none" id="#118-&gt;send_ws_notification(user, content)" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#A80036" points="191.43,832.89,201.265,832.3674,195.8849,830.6197,197.6326,825.2396,191.43,832.89" style="stroke: #A80036; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="23" x="254" y="810.2104">true</text><!--MD5=[c0b5ab1ba4df512ddc3b447a7d3ea9aa]
+link #118 to db.store_notification(user, content)--><path d="M324.31,772.82 C338.64,783.77 374.26,810.99 398.8,829.74 " fill="none" id="#118-&gt;db.store_notification(user, content)" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#A80036" points="402.94,832.91,398.2287,824.2611,398.971,829.869,393.3631,830.6114,402.94,832.91" style="stroke: #A80036; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="28" x="375" y="810.2104">false</text><!--MD5=[20b5504874e1baf3c6a17ff3f58525fe]
+@startuml chat_activity
+
+(*) - -> "request.recv()"
+
+"request.recv()" - -> "data.validate()"
+
+"data.validate()" - -> if "is succesful" then
+    - -> [true] find_chat()
+else
+    - -> [false] send_response(422)
+endif
+
+"find_chat()" - -> if "exists?" then
+
+    - -> [Some(chat)] "chats.send_message(from, to, message)"
+
+else
+
+    - -> [None] "chats.save(chat)"
+
+endif
+
+"chats.save(chat)" - -> "chats.send_message(from, to, message)"
+
+"chats.send_message(from, to, message)" - -> ===B1===
+
+===B1=== - -> "send_response(201)"
+
+"send_response(422)" - -> (*)
+"send_response(201)" - -> (*)
+
+===B1=== - -> "notifications.chat_notification(from, to)"
+
+partition Notifications {
+    "notifications.chat_notification(from, to)" - -> if "has_ws_connection?" then
+
+    - -> [true] "send_ws_notification(user, content)"
+    else
+
+    - -> [false] "db.store_notification(user, content)"
+
+    endif
+
+}
+
+@enduml
+
+PlantUML version 1.2020.02(Sun Mar 01 10:22:07 GMT 2020)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Java Version: 11.0.9+11-Ubuntu-0ubuntu1
+Operating System: Linux
+Default Encoding: ANSI_X3.4-1968
+Language: en
+Country: US
+--></g></svg>
