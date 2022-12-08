@@ -5,6 +5,9 @@ left to right direction
 folder models {
     file User
     file Media
+    file Message
+    file Rating
+    file Chat
 }
 
 folder usecases {
@@ -12,11 +15,17 @@ folder usecases {
     file get_user
     file update_profile
     file update_avatar
+    file friends
+    file ratings
+    file chats
 }
 
 folder repositories {
     file user_repository
     file media_repository
+    file friendship_repository
+    file rating_repository
+    file chat_repository
 }
 
 folder external {
@@ -24,7 +33,7 @@ folder external {
 }
 
 folder impl {
-    file postgres_user_repository
+    file postgres_repo_impl
     file minio_media_repository
     file "notifications_service" as NotificationsServiceImpl
 }
