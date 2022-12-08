@@ -1,0 +1,46 @@
+@startuml chat_activity
+
+(*) --> "request.recv()"
+
+"request.recv()" --> "data.validate()"
+
+"data.validate()" --> if "is succesful" then
+    --> [true] find_chat()
+else
+    --> [false] send_response(422)
+endif
+
+"find_chat()" --> if "exists?" then
+
+    --> [Some(chat)] "chats.send_message(from, to, message)"
+
+else
+
+    --> [None] "chats.save(chat)"
+
+endif
+
+"chats.save(chat)" --> "chats.send_message(from, to, message)"
+
+"chats.send_message(from, to, message)" --> ===B1===
+
+===B1=== --> "send_response(201)"
+
+"send_response(422)" --> (*)
+"send_response(201)" --> (*)
+
+===B1=== --> "notifications.chat_notification(from, to)"
+
+partition Notifications {
+    "notifications.chat_notification(from, to)" --> if "has_ws_connection?" then
+
+    --> [true] "send_ws_notification(user, content)"
+    else
+
+    --> [false] "db.store_notification(user, content)"
+
+    endif
+
+}
+
+@enduml
