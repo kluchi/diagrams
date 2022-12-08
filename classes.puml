@@ -84,7 +84,9 @@ MinioMediaRepoImpl -u-|> MediaRepository
 RegisterUserUsecase --> NotificationsService
 
 interface NotificationsService {
-    + send_verification(user_id)
+    + send_verification(user: UUID)
+    + send_chat_notification(from:UUID, user: UUID)
+    + send_friend_request(from: UUID, user: UUID)
 }
 
 class Friendship {
@@ -166,5 +168,44 @@ class RatingsUsecase {
 }
 
 RatingsUsecase --> RatingRepository
+
+class Message {
+    + sender: User
+    + text: str
+    + order: datetime
+}
+
+class Chat {
+    + u1: User
+    + u2: User
+    + messages: List[Message]
+}
+
+note right of Chat: invariant: u1.id < u2.id
+
+Chat --> "2" User
+
+Chat o-- Message
+Message --> User
+
+interface ChatRepository {
+    list_chats(user: UUID): List[Chat]
+    get_messages(u1: UUID, u2: UUID, offset: int): List[Message]
+    create_message(from: UUID, to: UUID, content: str): Message
+}
+
+ChatRepository o-- Chat
+
+class ChatUsecase {
+    - notifications: NotificationsService
+    - chats: ChatRepository
+
+    get_chats(user: UUID): List[Chat]
+    get_messages(u1: UUID, u2: UUID, offset: int): List[Message]
+    send_message(from: UUID, to: UUID, content: str): List[Message]
+}
+
+ChatUsecase --> ChatRepository
+ChatUsecase --> NotificationsService
 
 @enduml
