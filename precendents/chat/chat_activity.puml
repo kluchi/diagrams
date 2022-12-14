@@ -22,17 +22,19 @@ endif
 
 "chats.save(chat)" --> "chats.send_message(from, to, message)"
 
-"chats.send_message(from, to, message)" --> ===B1===
+"chats.send_message(from, to, message)" --> "notifications.chat_notification(from, to)"
+
+"notifications.chat_notification(from, to)" --> ===B1===
 
 ===B1=== --> "send_response(201)"
 
 "send_response(422)" --> (*)
 "send_response(201)" --> (*)
 
-===B1=== --> "notifications.chat_notification(from, to)"
+
 
 partition Notifications {
-    "notifications.chat_notification(from, to)" --> if "has_ws_connection?" then
+    ===B1=== -->  if "has_ws_connection?" then
 
     --> [true] "send_ws_notification(user, content)"
     else
@@ -40,6 +42,9 @@ partition Notifications {
     --> [false] "db.store_notification(user, content)"
 
     endif
+
+    "send_ws_notification(user, content)" --> (*)
+    "db.store_notification(user, content)" --> (*)
 
 }
 
