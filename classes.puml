@@ -2,7 +2,7 @@
 
 class RegisterUserUsecase {
     - users: UserRepository
-    + create_user(data)
+    + create_user(data: UserData): User?
 }
 RegisterUserUsecase --> UserRepository
 
@@ -15,7 +15,7 @@ GetUserUsecase --> UserRepository
 
 class UpdateProfileUsecase {
     - users: UserRepository
-    + update(user_data): void
+    + update(data:UserData): void
 }
 UpdateProfileUsecase --> UserRepository
 
@@ -23,8 +23,8 @@ UpdateProfileUsecase --> UserRepository
 class UpdateAvatarUsecase {
     - users: UserRepository
     - images: MediaRepository
-    + upload_avatar(image)
-    + delete_avatar()
+    + upload_avatar(image: Bytes): UUID
+    + delete_avatar(image_id: UUID): void
 }
 UpdateAvatarUsecase --> UserRepository
 UpdateAvatarUsecase --> MediaRepository
@@ -56,8 +56,8 @@ class Media {
 
 interface UserRepository {
     + get(id:UUID): User?
-    + get_by_email(email): User?
-    + save(user): User
+    + get_by_email(email: str): User?
+    + save(user: User): User
 }
 
 
@@ -70,7 +70,7 @@ class PostgresUserRepoImpl {
 PostgresUserRepoImpl -u-|> UserRepository
 
 interface MediaRepository {
-    + upload_image(image): UUID
+    + upload_image(image: Bytes): UUID
 }
 
 MediaRepository o-- Media
@@ -154,7 +154,7 @@ Rating --> "2" User
 
 interface RatingRepository {
     + get(from: UUID, to: UUID): Rating?
-    + save(rating): Rating
+    + save(rating: Rating): Rating
     + compute(of: UUID): float?
 }
 
